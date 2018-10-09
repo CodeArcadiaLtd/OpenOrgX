@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operational", "Operational", "{E486EFA4-3813-4487-B2F0-7527509DFEFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analytical", "Analytical", "{E7A5FB2C-AD83-46B3-9A55-696BBA8EF85B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SvcMgt", "SvcMgt", "{8BBBE2E1-8F39-43D2-A3CA-7F3EDD43216C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{DE4C2659-93E9-411A-877E-7B04DDB045C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeArcadia.OOX.Op.App.Web", "CodeArcadia.OOX.Op.App.Web\CodeArcadia.OOX.Op.App.Web.csproj", "{F17F6EE4-80F7-4717-A0AC-2ED8255139A3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F17F6EE4-80F7-4717-A0AC-2ED8255139A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17F6EE4-80F7-4717-A0AC-2ED8255139A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17F6EE4-80F7-4717-A0AC-2ED8255139A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17F6EE4-80F7-4717-A0AC-2ED8255139A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE4C2659-93E9-411A-877E-7B04DDB045C1} = {E486EFA4-3813-4487-B2F0-7527509DFEFA}
+		{F17F6EE4-80F7-4717-A0AC-2ED8255139A3} = {DE4C2659-93E9-411A-877E-7B04DDB045C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F5852B7-88CE-4F4D-8026-AFC1BB0375B0}
