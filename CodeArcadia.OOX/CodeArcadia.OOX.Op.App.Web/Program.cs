@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 
 namespace CodeArcadia.OOX.Op.App.Web
 {
+    /// <summary>
+    /// Program Start Point - Main Method
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)

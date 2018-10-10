@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using CodeArcadia.OOX.Op.App.Web.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebEssentials.AspNetCore.Pwa;
 
 namespace CodeArcadia.OOX.Op.App.Web
 {
@@ -41,6 +42,12 @@ namespace CodeArcadia.OOX.Op.App.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddProgressiveWebApp(new PwaOptions {
+                RegisterWebmanifest = true,
+                RoutesToPreCache = "/",
+                RegisterServiceWorker = true,
+                Strategy = ServiceWorkerStrategy.CacheFirst
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
