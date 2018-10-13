@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeArcadia.OOX.Op.App.Web</name>
+    </assembly>
+    <members>
+        <member name="T:CodeArcadia.OOX.Op.App.Web.Program">
+            <summary>
+            Program Start Point - Main Method
+            </summary>
+        </member>
+    </members>
+</doc>
