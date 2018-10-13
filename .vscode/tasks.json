@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/CodeArcadia.OOX/CodeArcadia.OOX.Op.App.Web/CodeArcadia.OOX.Op.App.Web.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
